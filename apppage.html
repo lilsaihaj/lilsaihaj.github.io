@@ -138,16 +138,16 @@ UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script
 
 // Set colors
 UserVoice.push(['set', {
-  accent_color: '#6aba2e',
+  accent_color: '#808283',
   trigger_color: 'white',
-  trigger_background_color: '#e23a39'
+  trigger_background_color: 'rgba(46, 49, 51, 0.6)'
 }]);
 
 // Identify the user and pass traits
 // To enable, replace sample data with actual user traits and uncomment the line
 UserVoice.push(['identify', {
-  //email:      'john.doe@example.com', // User�s email address
-  //name:       'John Doe', // User�s real name
+  //email:      'john.doe@example.com', // User’s email address
+  //name:       'John Doe', // User’s real name
   //created_at: 1364406966, // Unix timestamp for the date the user signed up
   //id:         123, // Optional: Unique id of the user (if set, this should not change)
   //type:       'Owner', // Optional: segment your users by type
@@ -162,16 +162,15 @@ UserVoice.push(['identify', {
 }]);
 
 // Add default trigger to the bottom-right corner of the window:
-UserVoice.push(['addTrigger', { mode: 'satisfaction', trigger_position: 'bottom-left' }]);
+UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
 
 // Or, use your own custom trigger:
-//UserVoice.push(['addTrigger', '#id', { mode: 'satisfaction' }]);
+//UserVoice.push(['addTrigger', '#id', { mode: 'contact' }]);
 
 // Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
 UserVoice.push(['autoprompt', {}]);
 </script>
 <script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
 <script type="text/javascript">
-	FreshWidget.init("", {"queryString": "&widgetType=popup", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "white", "buttonBg": "#FF0000", "alignment": "4", "offset": "300px", "formHeight": "500px", "url": "http://universetechs.freshdesk.com"} );
+	FreshWidget.init("", {"queryString": "&widgetType=popup", "widgetType": "popup", "buttonType": "text", "buttonText": "Support", "buttonColor": "white", "buttonBg": "#4C2B11", "alignment": "4", "offset": "235px", "formHeight": "500px", "url": "http://universetechs.freshdesk.com"} );
 </script>
- <style type="text/css"> * html #Trickstoostylepopupdiv { position:absolute; overflow:hidden;} #Trickstoostylepopupdiv { display:block; top:0px; left:0px; width:auto; height:auto; position:fixed; background-color:none; margin:0; overflow-y:hidden;} #Trickstoostylepopup { background-color: #fff; overflow:none; overflow:hidden;} .Trickstoostylepopup { width:auto; overflow:hidden; height:auto; position:fixed; top:45%; left:50%; margin-top:-210px; margin-left:-200px; border: 0px solid #999; padding: 20px;} </style> <!--[if lte IE 6]> <style type="text/css"> /*<![CDATA[*/ html {overflow-x:auto; overflow-y:hidden;} /*]]>*/ </style> <![endif]--> <div id="Trickstoostylepopupdiv"> <div id="Trickstoostylepopup" class="Trickstoostylepopup"> <center> <h3 class="title"> <img src="" /> </h3> </center> <center> <iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Funiversetechs&amp;width&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=570949212994510" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:auto;" allowTransparency="true"></iframe> </center> <div style=" float:left; margin-left:0px; font-size:9px; cursor:pointer;" > <a style=" font-size:9px; color:#3B78CD; text-decoration:none;" onmouseup="document.getElementById('Trickstoostylepopupdiv') .style.display='none'"> <img style="width: 20px; height: 20px; border: 0;"src="https://cdn3.iconfinder.com/data/icons/iconic-1/32/x_alt-512.png"/> </a> </div> </div> </div> 
