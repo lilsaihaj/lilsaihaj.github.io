@@ -1,197 +1,139 @@
-/* Clearfix */
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-.clearfix:after {
-    clear: both;
-}
-.clearfix {
-    *zoom: 1;
+* {
+   box-sizing:border-box; 
 }
 
-/* Basic Styles */
+html,
 body {
-	background-color: #ece8e5;
-	outline: 0;
+  width:100%;
+  height:100%;
 }
 
-a {
-	outline: 0;
-}
-nav {
-	height: 55px;
-	width: 100%;
-	background: #252525;
-	font-size: 11pt;
-	font-family: 'PT Sans', Arial, sans-serif;
-	font-weight: bold;
-	position: relative;
-	border-bottom: 2px solid #283744;
-}
-nav ul {
-	padding: 0;
-	margin: 0 auto;
-	width: 970px;
-	height: 40px;
-}
-nav li {
-	display: inline;
-	float: left;
-	text-align: center; 
-	list-style: none; 
-	line-height: 57px;
-	font: normal bold 14px/1.4em Arial Black, Verdana, Helvetica;
-}
-nav a {
-	color: #fff;
-	display: inline-block;
-	width: 150px;
-	text-align: center;
-	text-decoration: none;
-	line-height: 57px;
-	text-shadow: 1px 1px 0px #283744;
-}
-nav li a {
-	border-right: 1px solid #5c5b5b;
-	box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-}
-nav li:last-child a {
-	border-right: 0;
-}
-nav a:hover, nav a:active {
-	background-color: #bf1518;
-}
-nav a#pull {
-	display: none;
+body {
+  margin:.75em;
+  background:url(http://cache.clickonf5.org/wp-content/uploads/2010/04/ubuntu_wallpaper_thumb.png);
+  background-size: cover;
 }
 
-nav li:hover, a:hover {
-	background-color: #bf1518;
-}
-								
-nav li ul {
-		  display: none;
-		  height: auto;									
-		  margin: 0;
-		  padding: 0;
-		  width:100px;						
-	 }
-				
-nav li:hover ul {
-		  display: block;									
-	}
-					
-nav li ul li	{background-color: #252525; width:235px;}
+/* Advanced Checkbox Hack */
+body { -webkit-animation: bugfix infinite 1s; }
+@-webkit-keyframes bugfix { from {padding:0;} to {padding:0;} }
 
-nav li ul li a 	{
-		  border-bottom: 1px solid #5c5b5b;
-		  border-right:none;
-		  width:235px;
-		  }
-
-nav li ul li a:hover	{background-color: #bf1518; width:235px;}
-				
-/*Styles for screen 600px and lower*/
-@media screen and (max-width: 600px) {
-	nav { 
-  		height: auto;
-  	}
-  	nav ul {
-  		width: 100%;
-  		display: block;
-  		height: auto;
-  	}
-  	nav li {
-  		width: 100%;
-  		float: left;
-  		position: relative;
-  	}
-  	nav li a {
-		border-bottom: 1px solid #5c5b5b;
-		border-right:none;
-		outline: 0;
-	}
-  	nav a {
-	  	text-align: left;
-	  	width: 100%;
-	  	text-indent: 25px;
-  	}
-	
-	nav li ul li	{
-		  display: none;
-		  height: auto;									
-		  margin: 0;
-		  padding: 0;
-		  width:100px;						
-	 }
-
-	 nav li ul {
-	 	display: none;
-	 }
+input[type=checkbox] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 
-/*Styles for screen 515px and lower*/
-@media only screen and (max-width : 480px) {
-	nav {
-		border-bottom: 0;
-	}
-	nav ul {
-		display: none;
-		height: auto;
-	}
-
-	nav li a {
-		border-right:none;
-		outline: 0;
-	}
-	nav a#pull {
-		display: block;
-		background-color: #283744;
-		width: 100%;
-		position: relative;
-		outline: 0;
-	}
-	nav a#pull:after {
-		content:"";
-		background: url('http://s21.postimg.org/xmspcf6yb/nav_icon.png') no-repeat;
-		width: 30px;
-		height: 30px;
-		display: inline-block;
-		position: absolute;
-		right: 15px;
-		top: 10px;
-	}
-	
-	nav li ul 	{
-		  display: none;
-		  height: auto;									
-		  margin: 0;
-		  padding: 0;
-		  width:100px;						
-	 }
+label { 
+  display:none;
+  cursor: pointer;
+  user-select:none;
 }
 
-/*Smartphone*/
-@media only screen and (max-width : 320px) {
-	nav li {
-		display: block;
-		float: none;
-		width: 100%;
-	}
-	nav li a {
-		border-bottom: 1px solid #576979;
-		border-right: none;
-	}
-	
-	nav li ul 	{
-		  display: none;
-		  height: auto;									
-		  margin: 0;
-		  padding: 0;
-		  width:100px;						
-	 }
+/* background for li / select */
+$img_bg: url(https://raw.github.com/TimPietrusky/mantisbt-is-a-rockstar/master/rockstar/img/bg_dark_grey.png);
+
+/* custom-dropdown */
+nav[role="custom-dropdown"] {
+  position:relative;
+  width: 100%;
+    
+  a,
+  label {
+    color:#ccc;
+    text-decoration:none;
+    font: 1.4em sans-serif;
+    transition:color .3s ease-in-out;
+  }
+    
+  ul {
+    padding: 0;  
+    margin: 0 auto;  
+    width:100%;
+    list-style:none;
+    
+    > li {
+      float:left;
+      padding:.55em .55em;
+      width:19%;
+      background-image: $img_bg;
+      text-align:center;
+      transition-duration: .3s;
+      transition-timing-function: ease-in-out;
+      transition-property: box-shadow, color;
+      box-shadow:
+        0 .05em .25em 0 rgba(0, 0, 0, .35)
+      ;
+      cursor: pointer;
+    
+      &:hover {
+        background-color:rgba(0, 0, 0, .85);
+        color:#fff;
+        box-shadow:
+          0 .05em .25em 0 rgba(0, 0, 0, .35),
+          inset 0 0 0 2em rgba(0, 0, 0, .3)
+        ;
+    
+        > a {
+          color:#fff;
+        }
+      }
+    }
+  }
+}
+
+/* small screens */
+@media screen and (max-width: 44em) {
+  html,
+  body {
+    margin:0;      
+  }
+
+  nav[role="custom-dropdown"] {
+    ul {
+      display:none;
+      height:100%;
+    }
+
+    label {
+      position:relative;
+      display:block;
+      width:100%;
+      min-height:2.25em;
+      padding:.45em;
+      font-size:1.1em;
+      margin:0;
+      border: .15em solid rgba(60, 60, 60, .2);
+      background-image: $img_bg;
+    }
+    
+    label:after {
+      position: absolute;
+      right: .25em;  
+      top: 0; 
+      content:"\2261";
+      font-size:1.8em;
+    }
+    
+    input[type=checkbox]:checked ~ label:after {
+      color:#222;
+    }
+        
+    input[type=checkbox]:checked ~ ul {
+      display:block;
+        
+      > li {
+        width:100%;
+        opacity:.8;
+        text-align:left;
+    
+        &:after {
+          position:absolute;
+          right:.25em;
+          content:"\203A";
+          font: bold 1.4em sans-serif;
+        }
+      }        
+    }
+  }
 }
