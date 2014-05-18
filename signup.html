@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+
+* {
+  margin:0 auto;
+  padding: 0;
+  text-align: center;
+  font-family: "Helvetica Neue",sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background: #5c768b;
+}
+
+section {
+  position: absolute;
+  
+  width: 360px;
+  height: 360px;
+  
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+  
+  background: white;
+  border-radius: 60px;
+}
+
+img {
+  margin: 30px;
+}
+
+h1 {
+  font-size: 35px;
+  color: #5c768b;
+  font-weight: 200;
+}
+
+input[type="email"], input[type="password"] {
+  text-align: left;
+  
+  width: 300px;
+  height: 50px;
+  
+  font-size: 16px;
+  color: lightgrey;
+  
+  border: 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+  color: black;
+  outline: none;
+}
+
+input[type="submit"] {
+  position: absolute;
+  z-index: 1000;
+  top: 250px;
+  right: 30px;
+  
+  width: 30px;
+  height: 30px;
+  
+  border: 1px solid #5c768b;
+  color: #5c768b;
+  font-size: 20px;
+  background: none;
+  border-radius: 50%;  
+}
+
+input[type="submit"]:active {
+  color: black;
+  border: 1px solid black;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  top: 320px;
+  right: 240px;
+  
+  height: 30px;
+  width: 30px;
+  background: white;
+}
+
+p {
+  margin-top: 25px;
+  color: #5c768b;
+}
+
+.shake {
+  -webkit-animation: shake 0.5s infinite;
+}
+
+-webkit-keyframes {
+  0% {
+    margin-left: 0;
+  }
+  
+  50% {
+    margin-left: -100px;
+  }
+  
+  100% {
+    margin-left: 0px;
+  }
+  
+}
+
+</style>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by johaneg</title>
+
+  <link rel='stylesheet' href='http://codepen.io/assets/libs/fullpage/jquery-ui.css'>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <body>
+
+  <section class=".shake">
+
+    <img src="http://codepen_images.johaneg.nl/icloud_logo.png" />
+    <h1>Sign in to iCloud</h1>
+
+    <input type="email" onfocus="if(this.placeholder == 'Apple ID') { this.placeholder = ''; }" placeholder="Apple ID">
+    <input type="password" onfocus="if(this.placeholder == 'Password') { this.placeholder = ''; }" placeholder="Password" />
+    <input type="submit" class="submit_btn" value="&#10145;">
+
+    <input type="checkbox">
+    <p>Remember me</p>
+
+  </section>
+<script>
+
+
+
+<script>
+
+</body>
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
