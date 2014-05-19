@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<style>
+body {background-image:url(http://muscledrive.net/wp-content/uploads/2014/01/Cool-Muscle-Car-Wallpaper2.jpg);}
+</style>
+  <meta charset="UTF-8">
+
+  <title>Glassell</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+
+  <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css'>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+    <script src="js/modernizr.js"></script>
+
+</head>
+
+<body>
+
+ <div style="padding:5px;width:100%;border:0px solid black;display: table;overflow: hidden;" data-node-uid="58">
+<div style="font-family:   sans-serif; color:white;display: table-cell;text-align:center;font-size: 20px;vertical-align: middle" data-node-uid="59">
+<h1 data-node-uid="60">Glassel</h1>
+
+<div style="width: XXpx; margin: 1% auto;
+" data-node-uid="64"><strong data-node-uid="65"><a  data-toggle="modal" href="#AutoModal" target="_blank" data-node-uid="66"><img style="margin-bottom:15px;margin-right:15px;width: 200px; height: 300px; border: 0;" onmouseover="style.backgroundColor='" onmouseout="style.backgroundColor='transparent'" alt="" src="http://universetechsus.files.wordpress.com/2014/05/car-mechanic.png" data-node-uid="67"></a><a  data-toggle="modal" href="#BodyModal" target="_blank" data-node-uid="68"><img style="margin-bottom:15px;margin-right:15px;width: 200px; height: 300px; border: 0;" title="" onmouseover="style.backgroundColor=''" onmouseout="style.backgroundColor='transparent'" alt="" src="http://universetechsus.files.wordpress.com/2014/05/body-shop.png" data-node-uid="69"></a><a  data-toggle="modal" href="#TiresModal" target="_blank" data-node-uid="68"><img style="margin-bottom:15px;margin-right:15px;width: 200px; height: 300px; border: 0;" title="" onmouseover="style.backgroundColor=''" onmouseout="style.backgroundColor='transparent'" alt="" src="http://universetechsus.files.wordpress.com/2014/05/tire.png" data-node-uid="69"></a>
+<a data-toggle="modal" href="#TowingModal""><img style="margin-bottom:15px;margin-right:15px;width: 200px; height: 300px; border: 0;" title="" onmouseover="style.backgroundColor=''" onmouseout="style.backgroundColor='transparent'" alt="" src="http://universetechsus.files.wordpress.com/2014/05/towing.png" data-node-uid="69"></a>
+
+
+
+     </strong></div><strong data-node-uid="114">
+   </strong></div></div>
+
+
+
+<div id="AutoModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Automotive</h4>
+      </div>
+      <div class="modal-body">
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Rift.js - CodePen</title>
+
+  <style>
+
+</style>
+
+    <style>
+/* Base plugin styles */
+
+.rift { 
+  width: 200px; /* Define width */
+  height: 105px; /* Define height */
+  position: relative; 
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+.rift img { 
+  width: 100%; 
+  height: auto; 
+  opacity: 0;
+}
+
+.rift .caption { 
+  position: absolute; 
+  top: 50%;
+  width: 100%;
+  height: 60px; /* Define caption height */
+  line-height: 60px; /* Define matched line-height */ 
+  margin: -30px 0 0 0; /* Half caption height */
+  text-align: center; 
+  z-index: 0;
+}
+
+.rift span[class*="span"] {
+  display: block;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  transform: translate3d(0,0,0); /* Acceleration FTW */
+  transition: transform .25s; /* Define anim. speed */
+}
+
+.rift span.top-span { top: 0; }
+.rift span.btm-span { bottom: 0; }
+
+.rift:hover span.top-span { 
+  transform: translate(0,-30px); /* Half caption height */
+}
+
+.rift:hover > span.btm-span { 
+  transform: translate(0,30px); /* Half caption height */
+}
+
+/* Non-plugin styles */
+
+body { 
+  text-align: center;
+}
+
+.rift { 
+  display: inline-block;
+  cursor: pointer;
+}
+
+.rift .caption { 
+  color: black; 
+  background: white;
+}
+</style>
+
+    <script src="js/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+  <figure class="rift">
+  <img src="http://kylefoster.me/rift/img/01.jpg" alt="Leo">
+  <figcaption class="caption">Caption 01</figcaption>
+</figure>
+
+<figure class="rift">
+  <img src="http://kylefoster.me/rift/img/02.jpg" alt="Don">
+  <figcaption class="caption">Caption 02</figcaption>
+</figure>
+
+<figure class="rift">
+  <img src="http://kylefoster.me/rift/img/03.jpg" alt="Raph">
+  <figcaption class="caption">Caption 03</figcaption>
+</figure>
+
+<figure class="rift">
+  <img src="http://kylefoster.me/rift/img/04.jpg" alt="Mikey">
+  <figcaption class="caption">Caption 04</figcaption>
+</figure>
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+
+  <script src="js/index.js"></script>
+  <script>
+    /**
+ * Rift v1.0.0
+ * An itsy bitsy image-splitting jQuery plugin
+ * 
+ * Licensed under the MIT license.
+ * Copyright 2013 Kyle Foster @hkfoster
+ */
+;(function ( $, window, document, undefined ) {
+
+  $.fn.rift = function () {
+
+    return this.each(function () {
+      
+      // Vurribles
+      var element = $(this),
+          elemImg = element.find('img'),
+          imgSrc  = elemImg.attr('src');
+  
+      // We be chainin'  
+      element
+        .prepend('<span class="top-span"></span>')
+        .append('<span class="btm-span"></span>')
+        .find('span.top-span')
+        .css('background', 'url(' + imgSrc + ') no-repeat center top')
+        .css('background-size', '100%')
+        .parent()
+        .find('span.btm-span')
+        .css('background', 'url(' + imgSrc + ') no-repeat center bottom')
+        .css('background-size', '100%');
+    });
+  };
+})( jQuery, window, document );
+
+$('.rift').rift();
+/**
+ * StyleFix 1.0.3 & PrefixFree 1.0.7
+ * @author Lea Verou
+ * MIT license
+ */
+(function(){function t(e,t){return[].slice.call((t||document).querySelectorAll(e))}if(!window.addEventListener)return;var e=window.StyleFix={link:function(t){try{if(t.rel!=="stylesheet"||t.hasAttribute("data-noprefix"))return}catch(n){return}var r=t.href||t.getAttribute("data-href"),i=r.replace(/[^\/]+$/,""),s=(/^[a-z]{3,10}:/.exec(i)||[""])[0],o=(/^[a-z]{3,10}:\/\/[^\/]+/.exec(i)||[""])[0],u=/^([^?]*)\??/.exec(r)[1],a=t.parentNode,f=new XMLHttpRequest,l;f.onreadystatechange=function(){f.readyState===4&&l()},l=function(){var n=f.responseText;if(n&&t.parentNode&&(!f.status||f.status<400||f.status>600)){n=e.fix(n,!0,t);if(i){n=n.replace(/url\(\s*?((?:"|')?)(.+?)\1\s*?\)/gi,function(e,t,n){return/^([a-z]{3,10}:|#)/i.test(n)?e:/^\/\//.test(n)?'url("'+s+n+'")':/^\//.test(n)?'url("'+o+n+'")':/^\?/.test(n)?'url("'+u+n+'")':'url("'+i+n+'")'});var r=i.replace(/([\\\^\$*+[\]?{}.=!:(|)])/g,"\\$1");n=n.replace(RegExp("\\b(behavior:\\s*?url\\('?\"?)"+r,"gi"),"$1")}var l=document.createElement("style");l.textContent=n,l.media=t.media,l.disabled=t.disabled,l.setAttribute("data-href",t.getAttribute("href")),a.insertBefore(l,t),a.removeChild(t),l.media=t.media}};try{f.open("GET",r),f.send(null)}catch(n){typeof XDomainRequest!="undefined"&&(f=new XDomainRequest,f.onerror=f.onprogress=function(){},f.onload=l,f.open("GET",r),f.send(null))}t.setAttribute("data-inprogress","")},styleElement:function(t){if(t.hasAttribute("data-noprefix"))return;var n=t.disabled;t.textContent=e.fix(t.textContent,!0,t),t.disabled=n},styleAttribute:function(t){var n=t.getAttribute("style");n=e.fix(n,!1,t),t.setAttribute("style",n)},process:function(){t("style").forEach(StyleFix.styleElement),t("[style]").forEach(StyleFix.styleAttribute)},register:function(t,n){(e.fixers=e.fixers||[]).splice(n===undefined?e.fixers.length:n,0,t)},fix:function(t,n,r){for(var i=0;i<e.fixers.length;i++)t=e.fixers[i](t,n,r)||t;return t},camelCase:function(e){return e.replace(/-([a-z])/g,function(e,t){return t.toUpperCase()}).replace("-","")},deCamelCase:function(e){return e.replace(/[A-Z]/g,function(e){return"-"+e.toLowerCase()})}};(function(){setTimeout(function(){},10),document.addEventListener("DOMContentLoaded",StyleFix.process,!1)})()})(),function(e){function t(e,t,r,i,s){e=n[e];if(e.length){var o=RegExp(t+"("+e.join("|")+")"+r,"gi");s=s.replace(o,i)}return s}if(!window.StyleFix||!window.getComputedStyle)return;var n=window.PrefixFree={prefixCSS:function(e,r,i){var s=n.prefix;n.functions.indexOf("linear-gradient")>-1&&(e=e.replace(/(\s|:|,)(repeating-)?linear-gradient\(\s*(-?\d*\.?\d*)deg/ig,function(e,t,n,r){return t+(n||"")+"linear-gradient("+(90-r)+"deg"})),e=t("functions","(\\s|:|,)","\\s*\\(","$1"+s+"$2(",e),e=t("keywords","(\\s|:)","(\\s|;|\\}|$)","$1"+s+"$2$3",e),e=t("properties","(^|\\{|\\s|;)","\\s*:","$1"+s+"$2:",e);if(n.properties.length){var o=RegExp("\\b("+n.properties.join("|")+")(?!:)","gi");e=t("valueProperties","\\b",":(.+?);",function(e){return e.replace(o,s+"$1")},e)}return r&&(e=t("selectors","","\\b",n.prefixSelector,e),e=t("atrules","@","\\b","@"+s+"$1",e)),e=e.replace(RegExp("-"+s,"g"),"-"),e=e.replace(/-\*-(?=[a-z]+)/gi,n.prefix),e},property:function(e){return(n.properties.indexOf(e)?n.prefix:"")+e},value:function(e,r){return e=t("functions","(^|\\s|,)","\\s*\\(","$1"+n.prefix+"$2(",e),e=t("keywords","(^|\\s)","(\\s|$)","$1"+n.prefix+"$2$3",e),e},prefixSelector:function(e){return e.replace(/^:{1,2}/,function(e){return e+n.prefix})},prefixProperty:function(e,t){var r=n.prefix+e;return t?StyleFix.camelCase(r):r}};(function(){var e={},t=[],r={},i=getComputedStyle(document.documentElement,null),s=document.createElement("div").style,o=function(n){if(n.charAt(0)==="-"){t.push(n);var r=n.split("-"),i=r[1];e[i]=++e[i]||1;while(r.length>3){r.pop();var s=r.join("-");u(s)&&t.indexOf(s)===-1&&t.push(s)}}},u=function(e){return StyleFix.camelCase(e)in s};if(i.length>0)for(var a=0;a<i.length;a++)o(i[a]);else for(var f in i)o(StyleFix.deCamelCase(f));var l={uses:0};for(var c in e){var h=e[c];l.uses<h&&(l={prefix:c,uses:h})}n.prefix="-"+l.prefix+"-",n.Prefix=StyleFix.camelCase(n.prefix),n.properties=[];for(var a=0;a<t.length;a++){var f=t[a];if(f.indexOf(n.prefix)===0){var p=f.slice(n.prefix.length);u(p)||n.properties.push(p)}}n.Prefix=="Ms"&&!("transform"in s)&&!("MsTransform"in s)&&"msTransform"in s&&n.properties.push("transform","transform-origin"),n.properties.sort()})(),function(){function i(e,t){return r[t]="",r[t]=e,!!r[t]}var e={"linear-gradient":{property:"backgroundImage",params:"red, teal"},calc:{property:"width",params:"1px + 5%"},element:{property:"backgroundImage",params:"#foo"},"cross-fade":{property:"backgroundImage",params:"url(a.png), url(b.png), 50%"}};e["repeating-linear-gradient"]=e["repeating-radial-gradient"]=e["radial-gradient"]=e["linear-gradient"];var t={initial:"color","zoom-in":"cursor","zoom-out":"cursor",box:"display",flexbox:"display","inline-flexbox":"display",flex:"display","inline-flex":"display",grid:"display","inline-grid":"display","min-content":"width"};n.functions=[],n.keywords=[];var r=document.createElement("div").style;for(var s in e){var o=e[s],u=o.property,a=s+"("+o.params+")";!i(a,u)&&i(n.prefix+a,u)&&n.functions.push(s)}for(var f in t){var u=t[f];!i(f,u)&&i(n.prefix+f,u)&&n.keywords.push(f)}}(),function(){function s(e){return i.textContent=e+"{}",!!i.sheet.cssRules.length}var t={":read-only":null,":read-write":null,":any-link":null,"::selection":null},r={keyframes:"name",viewport:null,document:'regexp(".")'};n.selectors=[],n.atrules=[];var i=e.appendChild(document.createElement("style"));for(var o in t){var u=o+(t[o]?"("+t[o]+")":"");!s(u)&&s(n.prefixSelector(u))&&n.selectors.push(o)}for(var a in r){var u=a+" "+(r[a]||"");!s("@"+u)&&s("@"+n.prefix+u)&&n.atrules.push(a)}e.removeChild(i)}(),n.valueProperties=["transition","transition-property"],e.className+=" "+n.prefix,StyleFix.register(n.prefixCSS)}(document.documentElement);
+    </script>
+
+</body>
+
+</html>      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div id="BodyModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Auto Body Shop</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div id="TiresModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Tires</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div id="TowingModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Towing</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+  <script src='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js'></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
